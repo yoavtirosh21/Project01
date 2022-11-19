@@ -5,10 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: python:3.12.0a2
-      options: --privileged
     steps:
       - uses: actions/checkout@v2
       - run: pip install keyboard
-      - run: python test.py
+      - run: sudo python test.py
