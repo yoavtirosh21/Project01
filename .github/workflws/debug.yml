@@ -1,0 +1,13 @@
+name: Debug Script
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - name: Install Keyboard
+      - run: pip install keyboard
+      - name: Test Code
+      - run: py test.py
