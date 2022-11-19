@@ -4,8 +4,8 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sudo pip install keyboard
-      - run: sudo python test.py
+      - run: pip install keyboard
+      - run: python test.py
