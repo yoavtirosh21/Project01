@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-     container:
+    container:
       image: python:3.12.0a2-alpine3.16
       options: --privileged
     steps:
